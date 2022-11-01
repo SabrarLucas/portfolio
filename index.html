@@ -23,7 +23,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
@@ -57,6 +57,9 @@
             </div>
 
             <div class="nav__butns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -104,8 +107,8 @@
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home_titles">Bonjour, je suis Lucas</h1>
-                        <h3 class="home__subtitle">Dev</h3>
+                        <h1 class="home__titles">Bonjour, je suis Lucas</h1>
+                        <h3 class="home__subtitle">Frontend developer</h3>
                         <p class="home__description">Je suis très compétent dans le dev</p>
                         <a href="#contact" class="button button--flex">
                             Me Contacter<i class="uil uil-message button__icon"></i>
@@ -125,7 +128,7 @@
 
         <!-- ABOUT -->
         <section class="about section" id="about">
-            <h2 class="section__titles">A propos de moi</h2>
+            <h2 class="section__title">A propos de moi</h2>
             <span class="section__subtitle">Mon introduction</span>
 
             <div class="about__container container grid">
@@ -135,33 +138,35 @@
                     <p class="about__description">Très connu dans le milieu, je suis un peu comme la legende du dev</p>
 
                     <div class="about__info">
-                        <span class="about__info-titles">08+</span>
-                        <span class="about__info-name">Years <br> experience</span>
+                        <div>
+                            <span class="about__info-title">08+</span>
+                            <span class="about__info-name">Years <br> experience</span>
+                        </div>
+                    
+                        <div>
+                            <span class="about__info-title">20+</span>
+                            <span class="about__info-name">Completed <br> project</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">05+</span>
+                            <span class="about__info-name">Companies <br> worked</span>
+                        </div>
                     </div>
 
-                    <div class="about__info">
-                        <span class="about__info-titles">20+</span>
-                        <span class="about__info-name">Completed <br> project</span>
+                    <div class="about__buttons">
+                        <!-- CV -->
+                        <a download="" href="assets/pdf/new_CV.pdf" class="button button--flex">
+                            Download CV<i class="uil uil-download-alt button__icon"></i>
+                        </a>  
                     </div>
-
-                    <div class="about__info">
-                        <span class="about__info-titles">05+</span>
-                        <span class="about__info-name">Companies <br> worked</span>
-                    </div>
-                </div>
-
-                <div class="about__buttons">
-                    <!-- CV -->
-                    <a download="" href="assets/pdf/new_CV.pdf" class="button button--flex">
-                        Download CV<i class="uil uil-download-alt button__icon"></i>
-                    </a>  
                 </div>
             </div>
         </section>
 
         <!-- SKILLS -->
         <section class="skills section" id="skills">
-            <h2 class="section__titles">Compétence</h2>
+            <h2 class="section__title">Compétence</h2>
             <span class="section__subtitle">Mon niveau technique</span>
 
             <div class="skills__container container grid">
@@ -470,7 +475,7 @@
 
         <!-- SERVICES -->
         <section class="services section" id="services">
-            <h2 class="section__tit1e">Services</h2>
+            <h2 class="section__title">Services</h2>
             <span class="section__subtit1e">What i offer</span>
 
             <div class="services__container container grid">
@@ -819,6 +824,51 @@
             </div>
         </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Lucas</h1>
+                    <span class="footer__subtitle">Frontend Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contactme</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Bedimcode. All right reserved</p>
+        </div>
+    </footer>
+
+    <!-- SCROLL TOP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
     <!-- SWIPER JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
