@@ -4,7 +4,7 @@
     --header-height: 3rem;
 
     /*Couleur*/
-    --hue-color: 142;
+    --hue-color: 120;
 
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -73,7 +73,6 @@ body.dark-theme{
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
-
 
 /*================== Button Dark/Light ==================*/
 .nav__btns{
@@ -1016,7 +1015,7 @@ img{
         grid-template-columns: .25fr 3fr;
     }
     .home__blob{
-        width: 180px;
+        width: 130px;
     }
 
     .skills__title{
